@@ -1,3 +1,96 @@
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+hr {
+    width: 50px;
+    border: 1px solid#E3B873;
+    margin: 30px;
+}
+
+
+/*--------------------*/
+
+
+/** public styles**/
+
 @font-face {
     src: url(fonts/NunitoSans-Regular.ttf);
     font-family: "Nunito Sans"
@@ -8,131 +101,34 @@
     font-family: "Yeseva One";
 }
 
-html {
-    background: #131313;
-}
-
-html,
-body {
-    margin: auto;
-}
-
-.frame {
-    width: 1440px;
-    height: 7498px;
-    margin: 0 auto;
-}
-
-
-/** header **/
-
-header {
-    height: 80px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #E3B873;
-    font-size: 11px;
-    text-transform: uppercase;
-    font-family: Nunito Sans;
-}
-
-.header__links {
-    display: flex;
-    list-style-type: none;
-    padding: 0px;
-}
-
-.header__links_tel {
-    text-decoration-line: underline;
-}
-
-header a {
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-}
-
-.header_button {
-    background-color: #E3B873;
-}
-
-.header__links a:hover {
-    color: #E3B873;
-}
-
-
-/** main **/
-
-.main {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 710px;
-    color: #FFFFFF;
-}
-
 .wrapper {
-    background-image: url(images/BGmain.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 1440px;
-    height: 710px;
-    z-index: 100;
+    min-height: 100%;
 }
 
-.wrapper2 {
-    width: 100%;
-    height: 710px;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 99;
-    display: flex;
-    align-items: center;
-}
-
-.cover {
-    display: flex;
-    padding-left: 10%;
-    flex-direction: column;
-    font-family: Nunito Sans;
-    font-style: italic;
-    font-size: 12px;
-}
-
-.main__title_one {
-    font-family: Yeseva One;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 50px;
-    text-transform: uppercase;
+body {
     margin: 0;
+    padding: 0;
 }
 
-.main__title_two {
-    font-size: 22px;
-    line-height: 36px;
+.blacklayer {
+    position: relative;
+    background-color: #131313;
 }
 
-.cover__botton {
-    display: inline;
-    margin-top: 32px;
+.content {
+    max-width: 1170px;
+    font-family: Nunito Sans;
+    min-height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
-button {
+.button {
     background-color: transparent;
     border: 1px solid #E3B873;
     border-radius: 2px;
     font-family: Nunito Sans;
     font-style: italic;
-    padding: 20px 40px;
-    margin-right: 10px;
-}
-
-.button {
-    border: 1px solid white;
 }
 
 .button a {
@@ -140,13 +136,396 @@ button {
     color: white;
 }
 
-.button:hover {
+.title,
+.subtitle {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+a:hover {
+    color: #E3B873;
+}
+
+.button a:hover {
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #E3B873;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: Nunito Sans;
+    height: 80px;
+    width: 1258px;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    list-style-type: none;
+}
+
+.header_phone {
+    text-decoration-line: underline;
+    padding-right: 50px;
+    cursor: pointer;
+    margin: auto 0;
+}
+
+.header__links {
+    padding: 0 25px;
+}
+
+.header__phoneButton {
+    display: flex;
+}
+
+.header_button {
+    background-color: #E3B873;
+    margin: 0;
+    padding: 13px 33px;
+}
+
+
+/* page1 */
+
+.bgphoto {
+    background-image: url('images/BGmain.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bglayer {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.bgphoto,
+.bglayer {
+    width: 100%;
+    height: 707px;
+    position: absolute;
+    margin-top: 80px;
+}
+
+.cover {
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Nunito Sans;
+    font-style: italic;
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+
+.index__title_one {
+    font-family: Yeseva One;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 600px;
+}
+
+.index__title_two {
+    font-size: 22px;
+    line-height: 36px;
+    max-width: 490px;
+    padding: 20px 0;
+}
+
+.index__title_one,
+.index__title_two {
+    font-style: normal;
+    font-weight: normal;
+}
+
+.cover__botton {
+    display: inline;
+    padding-top: 20px;
+}
+
+.cover__botton_index {
+    border: 1px solid white;
+    width: 207px;
+    height: 51px;
+    margin-right: 20px;
+}
+
+.cover__botton_link {
+    text-decoration: none;
+    color: white;
+}
+
+.cover__botton_index:hover {
     background-color: #E3B873;
     border: 1px solid #E3B873;
     background-size: cover;
-    padding: 20px 40px;
 }
 
 .colorText {
     color: #E3B873;
+}
+
+
+/* Page2 */
+
+.page2 {
+    padding-top: 107px;
+    height: 1074px;
+}
+
+.titlepage2 {
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    color: #E3B873;
+}
+
+.subtitlepage2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.project__nav {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+    text-transform: uppercase;
+    list-style: none;
+    padding-bottom: 50px;
+}
+
+.project__links {
+    color: gray;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: justify;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__completed {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 65px 0 0 0;
+    max-width: 400px;
+}
+
+.completed_item {
+    flex: 0 1 auto;
+}
+
+.title__discription {
+    color: #ffffff;
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    text-transform: none;
+}
+
+.project__about {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.project__item {
+    flex: 0 1 50%
+}
+
+.project__photo {
+    padding-left: 25px;
+}
+
+h2.title {
+    max-width: 250px;
+    padding-bottom: 30px;
+}
+
+.page2 h3.title {
+    font-size: 18px;
+}
+
+.project__slider {
+    display: flex;
+    align-items: baseline;
+    padding-top: 80px;
+}
+
+
+/* page3*/
+
+.header_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.header_pageTitle {
+    padding-bottom: 10px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.page3__online {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    min-height: 1077px;
+    margin-top: -320px;
+}
+
+.page3__online h3 {
+    color: white;
+}
+
+.videoplayer {
+    position: relative;
+    min-width: 817px;
+    min-height: 434px;
+    margin-bottom: 30px;
+}
+
+.video {
+    z-index: 1;
+}
+
+.videolayer {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.page3text {
+    max-width: 630px;
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+/*Кнопка отправить и Imput*/
+
+.input__conteiner {
+    display: flex;
+    max-width: 769px;
+    max-height: 51px;
+    justify-content: space-between;
+}
+
+.submitButton {
+    padding: 20px 75px;
+    background-color: #E3B873;
+    text-transform: uppercase;
+    color: white;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.username,
+.phone {
+    border-bottom: solid 1px lightgray;
+    min-width: 230px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.username,
+.phone p {
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.checkbox__container {
+    margin-top: 40px;
+}
+
+
+/*Три колонки*/
+
+.page3__TypesOfRepair {
+    max-width: 1436px;
+    margin: 0 auto;
+}
+
+.colomn__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colomn__item {
+    flex-basis: 33.333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text__container {
+    margin-top: -20%;
+    background-color: white;
+    width: 330px;
+}
+
+.colomn__row .text li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.text {
+    padding: 20px 30px;
+}
+
+.text__button {
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    max-width: 230px;
+    padding: 17px;
+    text-transform: uppercase;
+}
+
+.text .title {
+    padding: 0px 0 13px 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-transform: none;
 }
