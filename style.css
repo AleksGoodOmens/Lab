@@ -1041,7 +1041,7 @@
      .checkbox__wrapper {
          padding: 20px;
      }
-     .submitButton {
+     .questions-wrapper .submitButton {
          width: 90%;
      }
      .questions__container {
