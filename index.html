@@ -9,29 +9,28 @@
 </head>
 
 <body>
+    <!--Header-->
     <header>
-        <div class="header">
+        <div class="header" id="home">
             <div class="header__logo">IC &Prime;Repair Design Project&Prime;</div>
             <nav class="header__nav">
                 <ul>
-                    <li><a href="home ">HOME</a></li>
-                    <li><a href="#Project">PROJECTS</a></li>
-                    <li><a href="MEASUREMENT ">MEASUREMENT</a></li>
-                    <li><a href="TEAM ">TEAM</a></li>
-                    <li><a href="REVIEWS ">REVIEWS</a></li>
-                    <li><a href="CONTACTS ">CONTACTS</a></li>
+                    <li><a href="#home ">HOME</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#MEASUREMENT">MEASUREMENT</a></li>
+                    <li><a href="#TEAM">TEAM</a></li>
+                    <li><a href="#REVIEWS">REVIEWS</a></li>
+                    <li><a href="#CONTACTS">CONTACTS</a></li>
                 </ul>
             </nav>
-
-            <div class=header__phone title="+7 (926) 768-32-39">
-                <a href="tel:+79267683239"></a>+7 (926) 768-32-39</div>
+            <a href="tel:+79267683239" class=header__phone title="+7 (926) 768-32-39">  +7 (926) 768-32-39</a>
             <button class="header_button button">Request a call
                 </button>
         </div>
     </header>
     <main>
 
-        <!--Первая страница-->
+        <!--Page 1 title-->
         <section class="page__1">
             <!--Фоновое фото-->
             <div class="bgphoto"></div>
@@ -58,66 +57,71 @@
                 </div>
             </div>
         </section>
-        <!--Вторая страница-->
+        <!--Page 2 project completed-->
         <section class="page__2">
             <div class="content1170">
-                <div class="project">
-                    <div class="project__completed">
+                <div class="project" id="project">
+                    <div class="project__nav_container">
+                        <Ul class="project__nav">
+                            <li><a class="project__links " href=" ">Rostov-on-Don, Admiral</a></li>
+                            <li><a class="project__links " href=" ">Sochi Thieves</a></li>
+                            <li><a class="project__links " href=" ">Rostov-on-Don Patriotic</a></li>
+                        </Ul>
+                    </div>
+
+                    <div class="project__container">
                         <div class="completed_item">
-                            <h2 class="title titlepage__2">Completed projects</h2>
+                            <h2 class="title">Completed <br> projects</h2>
                             <p class="title__discription">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction market we have made happy more than 1000 families</p>
                         </div>
-                        <div class="project__about completed_item">
 
-                            <div class="project__item">
-                                <h3 class="title titlepage__2">City:</h3>
-                                <p class="title__discription subtitlepage__2">Rostov-on-Don<br> LCD admiral</p>
-                            </div>
-                            <div class="project__item">
-                                <h3 class="title titlepage__2">apartment area:</h3>
-                                <p class="title__discription subtitlepage__2">81 m2</p>
-                            </div>
-
-
-                            <div class="project__item">
-                                <h3 class="title titlepage__2">Repair time:</h3>
-                                <p class="title__discription subtitlepage__2">3.5 months</p>
-                            </div>
-                            <div class="project__item">
-                                <h3 class="title titlepage__2">Repair Cost:</h3>
-                                <p class="title__discription subtitlepage__2">Upon request</p>
-                            </div>
+                        <div class=" project__photo ">
+                            <img src="images/image 2.1.png" alt=" ">
                         </div>
-                        <div class="project__slider completed_item">
-                            <div class="slider_nav"><img src="images/arrow.png">
-                            </div>
-                            <div class="slider_nav_dot_dots">
-                                <div class="slider_nav_dot"></div>
-                                <div class="slider_nav_dot"></div>
-                                <div class="slider_nav_dot"></div>
-                            </div>
+                        <div class="project__completed">
+                            <div class="project__about completed_item">
 
-                            <div class="slider_nav"><img src="images/arrow2.png">
+                                <div class="project__item">
+                                    <div class="title titlepage__2">City:</div>
+                                    <p class="title__discription subtitlepage__2">Rostov-on-Don<br> LCD admiral</p>
+                                </div>
+                                <div class="project__item">
+                                    <div class="title titlepage__2">apartment area:</div>
+                                    <p class="title__discription subtitlepage__2">81 m2</p>
+                                </div>
+
+
+                                <div class="project__item">
+                                    <div class="title titlepage__2">Repair time:</div>
+                                    <p class="title__discription subtitlepage__2">3.5 months</p>
+                                </div>
+                                <div class="project__item">
+                                    <div class="title titlepage__2">Repair Cost:</div>
+                                    <p class="title__discription subtitlepage__2">Upon request</p>
+                                </div>
+                            </div>
+                            <div class="project__slider completed_item">
+                                <div class="slider_nav"><img src="images/arrow.png">
+                                </div>
+                                <div class="slider_nav_dot_dots">
+                                    <div class="slider_nav_dot"></div>
+                                    <div class="slider_nav_dot"></div>
+                                    <div class="slider_nav_dot"></div>
+                                </div>
+
+                                <div class="slider_nav"><img src="images/arrow2.png">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class=" project__photo ">
-                        <div class="project__nav_container">
-                            <Ul class="project__nav">
-                                <li class="project__li"><a class="project__links " href=" ">Rostov-on-Don, Admiral</a></li>
-                                <li><a class="project__links " href=" ">Sochi Thieves</a></li>
-                                <li><a class="project__links " href=" ">Rostov-on-Don Patriotic</a></li>
-                            </Ul>
-                        </div>
-                        <img src="images/image 2.1.png" alt=" ">
-                    </div>
+
                 </div>
             </div>
         </section>
-        <!--Третья страница-->
+        <!--page 3 online control-->
         <section class="page__3">
             <div class="page__3__online">
-                <div class="header_page__">
+                <div class="header_page_3">
                     <h3 class="title header_page__Title">online control</h3>
                     <div class="svg__group">
                         <div><img src="images/line.svg"></div>
@@ -126,6 +130,7 @@
                     </div>
                 </div>
                 <div class="videoplayer">
+                    <img class="video__play" src="images/play.png" alt=" ">
                     <div class="videolayer"></div>
                     <img class="video" src="images/image 6.png" alt=" ">
 
@@ -141,24 +146,33 @@
                 <div class="input__conteiner">
                     <div class="username">
                         <P>Name:</P>
-                        <input type="text" name="username" placeholder="Whats is your name:">
+                        <input type="text" name="username" placeholder="Whats is your name:" class="input__text">
                     </div>
                     <div class="phone">
                         <P>Phone:</P>
-                        <input type="tel" name="username" placeholder="Your phone number:">
+                        <input type="tel" name="username" placeholder="Your phone number:" class="input__text">
                     </div>
-                    <div class="button submitButton">Submit</div>
+                    <button class="button submitButton">Submit</button>
+
+                    <div class="checkbox__wrapper checkbox__container">
+
+                        <label class="label">
+                            <input type="checkbox" class="check1"/>
+                            <div class="boxcheck1"></div>
+                            <div class="checkbox__text">I agree to the processing of personal data</div>
+                        </label>
+
+                    </div>
+
                 </div>
 
-                <div class="checkbox__container">
-                    <input type="checkbox" name="agree" value="1"><span>I agree to the processing of personal data</span>
-                </div>
+
             </div>
         </section>
-        <!--Четвертая страница-->
-        <section class="page__4">
+        <!--Page 4 TYPES OF REPAIR-->
+        <section class="page__4" id="TEAM">
 
-            <div class="header_page__">
+            <div class="header_page__4">
                 <h3 class="title header_page__Title">TYPES OF REPAIR</h3>
                 <div class="svg__group">
                     <div><img src="images/line.svg"></div>
@@ -231,7 +245,7 @@
                 </div>
             </div>
         </section>
-        <!--Пятая страница-->
+        <!--Page 5 MEASUREMENT-->
         <section class="page__5">
             <div class="page__5__layer">
                 <div class="page__5__container">
@@ -253,30 +267,34 @@
                             <div class="page__5__text_item_text">Get a cost estimate and <br>the timing of your future repairs</div>
                         </div>
                     </div>
-                    <div class="page__5__request">
+                    <div class="page__5__request" id="MEASUREMENT">
                         <div class="request__container">
                             <p class="request__title">Leave a request for free <br>departure of the measurer</p>
                             <div class="request__container_input">
                                 <div>
                                     <P>Name:</P>
                                     <input type="text" class="colortext" name="username" placeholder="Whats is your name:">
-                                    <hr>
+
                                 </div>
                                 <div>
                                     <P>Phone:</P>
                                     <input type="tel" class="colortext" name="username" placeholder="Your phone number:">
-                                    <hr>
+
                                 </div>
                                 <div>
                                     <P>Email:</P>
                                     <input type="text" class="colortext" name="username" placeholder="Your email:">
-                                    <hr>
+
                                 </div>
                             </div>
-                            <div>
-                                <input type="checkbox" name="agree" value="1"><span>I agree to the processing of personal data</span>
+                            <div class="checkbox__wrapper ">
+                                <label class="label">
+                                    <input type="checkbox" class="check1"/>
+                                    <div class="boxcheck1 boxcheck2"></div>
+                                    <div class="checkbox__text">I agree to the processing of personal data</div>
+                                </label>
                             </div>
-                            <div class="button page__5__request_input_button">Call the measurer</div>
+                            <button class="button page__5__request_input_button">Call the measurer</button>
                         </div>
                     </div>
                 </div>
@@ -288,7 +306,7 @@
                 </div>
             </div>
         </section>
-        <!--Шестая страница-->
+        <!--page 6 Our clients-->
         <section class="page__6">
             <div class="content1240">
                 <div class="page__6__header">
@@ -296,7 +314,7 @@
                     <img src="images/Hands.png">
                     <div class="page__6__header_subtitle">80% of our customers recommend us to their friends and family.</div>
                 </div>
-                <div class="page__6__comments_container">
+                <div class="page__6__comments_container" id="REVIEWS">
                     <div class="page__6__comments_item">
                         <div class="page__6__comments_photo">
                             <img src="images/photo1.png">
@@ -331,51 +349,62 @@
                         <div class="page__6__footer"><img src="images/discription3.png"></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--Седьмая страница-->
-        <section class="page__7">
-            <div class="page__7__questions page__5">
-                <div class="questions__container">
-                    <div class="questions-wrapper">
-                        <p class="questions__title">have any questions</p>
-                        <div class="questions__container_input">
-                            <div class="questions__container_input_row">
-                                <div>
-                                    <P>Name:</P>
-                                    <input type="text" class="colortext" name="username" placeholder="Whats is your name:">
-                                    <hr>
-                                </div>
-                                <div>
-                                    <P>Phone:</P>
-                                    <input type="tel" class="colortext" name="username" placeholder="Your phone number:">
-                                    <hr>
-                                </div>
+                <section class="page__6">
+                    <div class="page__6__questions page__5">
+                        <div class="questions__container">
+                            <div class="questions-wrapper">
+                                <p class="questions__title">have any questions</p>
+                                <div class="questions__container_input">
+                                    <div class="questions__container_input_row">
+                                        <div>
+                                            <P>Name:</P>
+                                            <input type="text" class="colortext" name="username" placeholder="Whats is your name:">
 
-                            </div>
-                            <div class="questions__container_input_row_email">
-                                <P>Email:</P>
-                                <input type="text" class="colortext" name="username" placeholder="Your email:">
-                                <hr>
+                                        </div>
+                                        <div>
+                                            <P>Phone:</P>
+                                            <input type="tel" class="colortext" name="username" placeholder="Your phone number:">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="questions__container_input_row_email">
+                                        <P>Question</P>
+                                        <input type="text" class="colortext" name="username" placeholder="I want to know:">
+
+                                    </div>
+                                </div>
+                                <div class="checkbox__wrapper">
+
+                                    <label class="label">
+                                        <input type="checkbox" class="check1"/>
+                                        <span class="boxcheck1 boxcheck2"></span>
+                                        <span class="checkbox__text">I agree to the processing of personal data</span>
+                                    </label>
+
+                                </div>
+                                <button class="submitButton page__6__questions_input_button button">Submit</button>
                             </div>
                         </div>
-                        <div>
-                            <input type="checkbox" name="agree" value="1"><span>I agree to the processing of personal data</span>
-                        </div>
-                        <div class="submitButton page__7__questions_input_button">Submit</div>
                     </div>
-                </div>
+                </section>
+
+
+
+
             </div>
+
+
         </section>
-        <!--Воьмая страница-->
-        <section class="page__8">
-            <div class="page__8__content">
-                <div class="page__8__title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
-                    <div class="page__8__icon">
+        <!--Page 7 Contacts-->
+        <section class="page__7" id="CONTACTS">
+            <div class="page__7__content">
+                <div class="page__7__title">Rostov-on-Don, Nansen St., 239 Shopping Center Decorum Tel +7 (928) 768 32 29
+                    <div class="page__7__icon">
                         <img src="images/iconmail.png">
                         <img src="images/iconinsta.png"></div>
                 </div>
-                <div class="page__8__map">
+                <div class="page__7__map">
                     <img src="images/page8__map.png">
                 </div>
             </div>
@@ -387,17 +416,15 @@
             <div class="header__logo">IC &Prime;Repair Design Project&Prime;</div>
             <nav class="header__nav">
                 <ul>
-                    <li><a href="home ">HOME</a></li>
-                    <li><a href="#Project">PROJECTS</a></li>
-                    <li><a href="MEASUREMENT ">MEASUREMENT</a></li>
-                    <li><a href="TEAM ">TEAM</a></li>
-                    <li><a href="REVIEWS ">REVIEWS</a></li>
-                    <li><a href="CONTACTS ">CONTACTS</a></li>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#MEASUREMENT">MEASUREMENT</a></li>
+                    <li><a href="#TEAM">TEAM</a></li>
+                    <li><a href="#REVIEWS">REVIEWS</a></li>
+                    <li><a href="#CONTACTS">CONTACTS</a></li>
                 </ul>
             </nav>
-
-            <div class=header__phone title="+7 (926) 768-32-39">
-                <a href="tel:+79267683239"></a>+7 (926) 768-32-39</div>
+            <a href="tel:+79267683239" class=header__phone title="+7 (926) 768-32-39">  +7 (926) 768-32-39</a>
             <button class="header_button button">
                 Request a call
                 </button>
